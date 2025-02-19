@@ -2,7 +2,7 @@
   "routes": [
     {
       "route": "/*",
-      "redirect": "/login"
+      "rewrite": "/index.html"
     }
   ]
 }
