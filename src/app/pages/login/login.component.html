@@ -5,6 +5,7 @@
     <h2>Iniciar Sesión</h2>
     <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
       <bmb-input
+        [attr.id]="'emailInput'"
         label="Correo electrónico"
         placeholder="ejemplo@dominio.com"
         icon="email"
@@ -18,6 +19,7 @@
       ></bmb-input>
 
       <bmb-input
+        [attr.id]="'passwordInput'"
         type="password"
         label="Contraseña"
         placeholder="Contraseña"
