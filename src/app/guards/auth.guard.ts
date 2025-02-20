@@ -10,7 +10,7 @@ export const authGuard: CanActivateFn = ( route: ActivatedRouteSnapshot, state: 
   const authService = inject( AuthService );
   const router = inject( Router );
 
-  console.log( 'authGuard: Checking authentication for route:', state.url );
+  // console.log( 'authGuard: Checking authentication for route:', state.url );
 
   return authService.isAuthenticated$.pipe(
     first(), // Finaliza después de la primera emisión
