@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "routes": [
+        {
+          "route": "/assets/*"
+        },
+        {
+          "route": "/*.css"
+        },
+        {
+          "route": "/*.js"
+        },
+        {
+          "route": "/*.ttf"
+        },
+        {
+          "route": "/*.woff"
+        },
+        {
+          "route": "/*.woff2"
+        },
+        {
+          "route": "/*.map"
+        },
+        {
+          "route": "/*.ico"
+        },
+        {
+          "route": "/*",
+          "rewrite": "/index.html"
+        }
+      ]
+    }
+  ]
+}
