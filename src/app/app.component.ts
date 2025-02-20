@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
     } );
 
     this.authInterceptor.logoutRequest.subscribe( () => {
-      console.log( 'AppComponent: Received logoutRequest event from AuthInterceptor' );
+      // console.log( 'AppComponent: Received logoutRequest event from AuthInterceptor' );
       this.authService.logout();
     } );
   }
@@ -94,7 +94,7 @@ export class AppComponent implements OnInit {
   }
 
   init(): void {
-    console.log( 'init' );
+    // console.log( 'init' );
   }
 
   handleRequest( event: IBmbLoginOnboarding ) {
@@ -124,7 +124,7 @@ export class AppComponent implements OnInit {
         }, 1000 );
         break;
       default:
-        console.log( 'Invalid action' );
+        // console.log( 'Invalid action' );
     }
   }
 }

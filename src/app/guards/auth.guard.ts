@@ -15,9 +15,9 @@ export const authGuard: CanActivateFn = ( route: ActivatedRouteSnapshot, state: 
   return authService.isAuthenticated$.pipe(
     first(), // Finaliza después de la primera emisión
     tap( isAuthenticated => {
-      console.log( 'authGuard: isAuthenticated$', isAuthenticated );
+      // console.log( 'authGuard: isAuthenticated$', isAuthenticated );
       if ( !isAuthenticated ) {
-        console.log( 'authGuard: Not authenticated, navigating to /login' );
+        // console.log( 'authGuard: Not authenticated, navigating to /login' );
         router.navigate( [ '/login' ], { queryParams: { returnUrl: state.url } } );
       }
     } )

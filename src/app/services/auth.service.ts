@@ -22,7 +22,7 @@ export class AuthService {
 
   constructor( private http: HttpClient ) {
     this.router = inject( Router );
-    console.log( 'AuthService: Constructor called' );
+    // console.log( 'AuthService: Constructor called' );
     // Se realiza una verificación inicial del estado de autenticación.
     this.checkAuthStatus().subscribe();
   }

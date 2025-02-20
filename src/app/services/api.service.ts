@@ -27,7 +27,7 @@ export class ApiService {
   }
 
   private handleError( error: HttpErrorResponse ) {
-    console.error( 'API Error:', error );
+    // console.error( 'API Error:', error );
     let errorMessage = 'Ocurrió un error al obtener los datos. Por favor, inténtelo de nuevo más tarde.';
 
     if ( error.error instanceof ErrorEvent ) {

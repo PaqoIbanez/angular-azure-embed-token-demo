@@ -64,7 +64,7 @@ export class LoginComponent {
         },
         error: ( error ) => {
           this.errorMessage = 'Usuario o contraseña incorrectos.';
-          console.error( 'Login error:', error );
+          // console.error( 'Login error:', error );
         }
       } );
   }

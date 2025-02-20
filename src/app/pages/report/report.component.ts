@@ -78,18 +78,18 @@ export class ReportComponent implements OnInit, OnDestroy {
           this.authService.logout();
         } else {
           this.error = 'Error al solicitar el token de incrustación. Por favor, inténtelo de nuevo más tarde.';
-          console.error( 'Error fetching embed info:', e );
+          // console.error( 'Error fetching embed info:', e );
         }
       }
     } );
   }
 
   onEmbedded( report: Report ): void {
-    console.log( 'Report embedded:', report );
+    // console.log( 'Report embedded:', report );
   }
 
   onLoadFailed( errorEvent: any ): void {
-    console.error( 'Report load failed:', errorEvent );
+    // console.error( 'Report load failed:', errorEvent );
     this.error = 'Error al cargar el informe de Power BI. Por favor, inténtelo de nuevo más tarde.';
   }
 }

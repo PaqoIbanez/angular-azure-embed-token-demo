@@ -25,7 +25,7 @@ export class ReportService {
       withCredentials: true
     } ).pipe(
       tap( resp => {
-        console.log( resp );
+        // console.log( resp );
       } ),
       catchError( this.handleError )
     );
@@ -34,12 +34,12 @@ export class ReportService {
   private handleError( error: HttpErrorResponse ) {
     if ( error.error instanceof ErrorEvent ) {
       // Error de lado del cliente o de red.
-      console.error( 'An error occurred:', error.error.message );
+      // console.error( 'An error occurred:', error.error.message );
     } else {
       // El backend retornó un código de error.
-      console.error(
-        `Backend returned code ${ error.status }, ` +
-        `body was: ${ error.error }` );
+      // console.error(
+        // `Backend returned code ${ error.status }, ` +
+        // `body was: ${ error.error }` );
     }
     return throwError( () => new Error( 'Something bad happened; please try again later.' ) );
   }
